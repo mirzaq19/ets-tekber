@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         rbJk = findViewById(R.id.rbJk);
         mhs = new ArrayList<>();
 
-//        Mahasiswa mhs1  = new Mahasiswa("Mirzaq","123",3.4,"Laki-Laki");
-//        mhs.add(mhs1);
-
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recylerViewLayoutManager = new LinearLayoutManager(this);
@@ -55,18 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         myAdapter.add(mhs.size(), m);
 
-//        mhs.add(m);
-
         Toast.makeText(this,"Berhasil menambahkan data",Toast.LENGTH_LONG).show();
     }
-
-//    public String concatString(ArrayList<Mahasiswa> mhs){
-//        StringBuilder sb = new StringBuilder();
-//        for(int i = 0; i < mhs.size(); i++) {
-//            sb.append(mhs.get(i));
-//        }
-//
-//        return sb.toString();
-//    }
 
 }
