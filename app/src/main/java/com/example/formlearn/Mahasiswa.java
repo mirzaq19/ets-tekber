@@ -6,9 +6,9 @@ public class Mahasiswa {
     private String nama;
     private String nrp;
     private double ipk;
-    private String jenis_kelamin;
+    private boolean jenis_kelamin;
 
-    public Mahasiswa(String nama, String nrp, double ipk, String jenis_kelamin) {
+    public Mahasiswa(String nama, String nrp, double ipk, boolean jenis_kelamin) {
         this.nama = nama;
         this.nrp = nrp;
         this.ipk = ipk;
@@ -40,11 +40,22 @@ public class Mahasiswa {
     }
 
     public String getJenis_kelamin() {
-        return jenis_kelamin;
+        if(this.jenis_kelamin){
+            return "Laki-laki";
+        }
+        return "Perempuan";
     }
 
-    public void setJenis_kelamin(String jenis_kelamin) {
+    public void setJenis_kelamin(boolean jenis_kelamin) {
         this.jenis_kelamin = jenis_kelamin;
+    }
+
+    public boolean isLaki(){
+        return this.jenis_kelamin;
+    }
+
+    public boolean isPerempuan(){
+        return !this.jenis_kelamin;
     }
 
     @NonNull
