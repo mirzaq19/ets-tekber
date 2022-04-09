@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Form Learn</string>
+    <string name="app_name">Mahasiswa Form</string>
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="jenis_kelamin">Jenis Kelamin</string>
     <string name="jk_laki_laki">Laki-Laki</string>
@@ -7,6 +7,8 @@
     <string name="ipk">IPK</string>
     <string name="nrp">NRP</string>
     <string name="mahasiswa">Mahasiswa</string>
+    <string name="save_button">Simpan</string>
+    <string name="double_format">%.2f</string>
 
 
 </resources>
